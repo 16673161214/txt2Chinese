@@ -397,7 +397,9 @@ class TxtCleaner:
         return uni_str
 
 
-import os
+
 if __name__ == '__main__':
     txtcleaner = TxtCleaner()
+    f = open(r'C:\path', 'r', encoding='utf-8')
+    text = f.read()
     text = txtcleaner.aswhole(text)
